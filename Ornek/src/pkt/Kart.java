@@ -3,7 +3,7 @@ package pkt;
 /**
  * Banka kartını temsil eden sınıf
  * @author MFA
- *
+ * // ---
  */
 public class Kart implements IKart {
 	private Hesap hesap;
@@ -12,6 +12,7 @@ public class Kart implements IKart {
 	public Kart(Hesap hesap, String sifre) {
 		/*
 		 * 
+   		 * // Yorum bilgisi
 		 */
 		this.hesap = hesap;
 		this.sifre = sifre;
@@ -28,6 +29,7 @@ public class Kart implements IKart {
 
 	@Override
 	public IHesap getHesap() {
+		// get hesap
 		return hesap;
 	}
 }
