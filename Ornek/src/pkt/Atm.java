@@ -17,12 +17,12 @@ public class Atm {
 	 */
 	public boolean paraCek(IKart kart,String sifre, double miktar) {
 		if(!kart.girisKontrol(sifre)) return false;
-		return kart.getHesap().paraCek(miktar);
+		return kart.getHesap().paraCek(miktar); // Para cekme islemini gerceklestir
 	}
 	
 	public boolean paraYatir(IKart kart,String sifre, double miktar) {
-		// Şifre kontrolü
+		// Şifre kontrolü /* --- */
 		if(!kart.girisKontrol(sifre)) return false;
-		return kart.getHesap().paraYatir(miktar);
+		return kart.getHesap().paraYatir(miktar); /* para yatirma islemi */
 	}
 }
